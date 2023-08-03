@@ -1,0 +1,190 @@
+@font-face {
+  font-family: 'HankenGrotesk';
+  src: url('../assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'HankenGrotesk';
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 40vw;
+  height: 60vh;
+  border-radius: 1rem;
+  box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(0deg, #6541FD, #3930ED);
+  border-radius: 1rem;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  color: #fff;
+}
+
+.card > h3 {
+  color: #ccc;
+  font-size: 1.2rem;
+  margin: 2rem;
+}
+
+.circle-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #6541FD, #3930ED);
+  border: none;
+  box-shadow: 5px 5px 10px rgba(#6341fdc4);
+  border-radius: 10rem;
+  height: 10rem;
+  width: 10rem;
+}
+
+.score {
+  font-size: 4rem;
+}
+
+.card p {
+  font-size: 1rem;
+  columns: #ccc;
+}
+
+.feedback {
+  margin: 1.2rem;
+}
+
+.feedback-msg {
+  margin: 1rem;
+  text-align: center;
+  width: 70%;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.summary-title {
+  color: #333;
+  font-size: 1.2rem;
+  margin: 2rem;
+}
+
+.summary-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+}
+
+.list-item {
+  margin: 8%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 1rem;
+  padding: .8rem;
+  background-color: #FFF6F5;
+  box-shadow: .25rem .25rem .25rem rgba(0, 0, 0, 0.3);
+  transform: scale(1);
+  transition: transform 0.2s ease; /* Defina a duração e a função de transição desejadas */
+}
+
+/* Estilo ao passar o mouse sobre o <li> */
+.my-list li:hover {
+  transform: scale(1.1); /* Defina a escala desejada ao passar o mouse sobre o elemento */
+}
+
+.list-item:hover {
+  transform: scale(1.05);
+  transition-duration: .2s;
+}
+
+.list-item > p {
+  font-weight: bold;
+}
+
+/* Definindo as cores dos ícones */
+.summary-list .list-item ion-icon[name="flash-outline"] {
+  color: #df4649;
+}
+
+.summary-list .list-item ion-icon[name="bulb-outline"] {
+  color: #f2b32b;
+}
+
+.summary-list .list-item ion-icon[name="chatbubble-ellipses-outline"] {
+  color: #20c59c;
+}
+
+.summary-list .list-item ion-icon[name="eye-outline"] {
+  color: #2d4cbd;
+}
+
+/* Definindo a cor do primeiro <p> igual à cor do ícone */
+.summary-list .list-item ion-icon[name="flash-outline"] + p.item-title {
+  color: #df4649;
+}
+
+.summary-list .list-item ion-icon[name="bulb-outline"] + p.item-title {
+  color: #f2b32b;
+}
+
+.summary-list .list-item ion-icon[name="chatbubble-ellipses-outline"] + p.item-title {
+  color: #20c59c;
+}
+
+.summary-list .list-item ion-icon[name="eye-outline"] + p.item-title {
+  color: #2d4cbd;
+}
+
+/* Definindo a cor dos números em preto */
+.summary-list .list-item ion-icon + p + p {
+  color: #555;
+  font-weight: normal;
+}
+
+
+button[type="submit"] {
+  background-color: #303B59;
+  width: 100%;
+  padding: .8rem;
+  margin-top: 1.5rem;
+  border: none;
+  border-radius: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+button[type="submit"]:hover {
+  background-color: #303b59de;
+}
+
+.attribution {
+  margin: 5vh;
+}
+
+
